@@ -307,7 +307,7 @@ body {
 .advantage__item {
     width: 286px;
     height: 121px;
-    background-image: url('/img/advantage-arrow.png');
+    background-image: url('../img/advantage-arrow.png');
     padding: 25px 0;
     display: flex;
     align-items: center;
@@ -376,19 +376,19 @@ body {
 }
 
 .servises__item--1 {
-    background-image: url('/img/servises-item-1.jpg');
+    background-image: url('../img/servises-item-1.jpg');
 }
 
 .servises__item--2 {
-    background-image: url('/img/servises-item-2.jpg');
+    background-image: url('../img/servises-item-2.jpg');
 }
 
 .servises__item--3 {
-    background-image: url('/img/servises-item-3.jpg');
+    background-image: url('../img/servises-item-3.jpg');
 }
 
 .servises__item--4 {
-    background-image: url('/img/servises-item-4.jpg');
+    background-image: url('../img/servises-item-4.jpg');
 }
 
 .servises__wrapper {
@@ -410,11 +410,26 @@ body {
     background-color: var(--color-dark-grey);
     padding-top: 166px;
     padding-bottom: 154px;
+    position: relative;
 }
 
 .destinations__subtitle {
+    position: relative;
+    z-index: 1000;
     color: var(--color-white);
     margin-bottom: 99px;
+}
+
+
+.destinations__decor-plain{
+  position: absolute;  
+  top: -81px;
+  right: 0;
+}
+
+.destinations__decor-dots{
+    position: absolute; 
+    top: -511px;
 }
 
 .destinations__content {
@@ -696,4 +711,21 @@ body {
     text-align: center;
     color: var(--color-white);
 
+}
+
+
+
+
+@media (max-width: 1366px) {
+    .servises__list{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .news__list{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }
